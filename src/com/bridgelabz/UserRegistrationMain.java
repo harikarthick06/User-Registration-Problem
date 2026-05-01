@@ -13,12 +13,15 @@ public class UserRegistrationMain {
 
         System.out.print("Enter First Name: ");
         String firstName = scanner.nextLine();
+        System.out.println(userRegistration.validateFirstName(firstName)
+                ? "Valid First Name"
+                : "Invalid First Name");
 
-        if (userRegistration.validateFirstName(firstName)) {
-            System.out.println("Valid First Name");
-        } else {
-            System.out.println("Invalid First Name");
-        }
+        System.out.print("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+        System.out.println(userRegistration.validateLastName(lastName)
+                ? "Valid Last Name"
+                : "Invalid Last Name");
 
         scanner.close();
     }
