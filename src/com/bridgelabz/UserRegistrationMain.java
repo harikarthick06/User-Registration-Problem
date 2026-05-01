@@ -23,6 +23,12 @@ public class UserRegistrationMain {
                 ? "Valid Last Name"
                 : "Invalid Last Name");
 
+        System.out.print("Enter Email: ");
+        String email = scanner.nextLine();
+        System.out.println(userRegistration.validateEmail(email)
+                ? "Valid Email"
+                : "Invalid Email");
+
         scanner.close();
     }
 }
