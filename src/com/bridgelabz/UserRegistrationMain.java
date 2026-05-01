@@ -29,6 +29,12 @@ public class UserRegistrationMain {
                 ? "Valid Email"
                 : "Invalid Email");
 
+        System.out.print("Enter Mobile Number: ");
+        String mobileNumber = scanner.nextLine();
+        System.out.println(userRegistration.validateMobileNumber(mobileNumber)
+                ? "Valid Mobile Number"
+                : "Invalid Mobile Number");
+
         scanner.close();
     }
 }
