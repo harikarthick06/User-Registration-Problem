@@ -12,6 +12,8 @@ public class UserRegistration {
 
     private static final String MOBILE_REGEX = "^[0-9]{2}\\s[0-9]{10}$";
 
+    private static final String PASSWORD_REGEX = "^.{8,}$";
+
     public boolean validateFirstName(String firstName) {
         return Pattern.matches(FIRST_NAME_REGEX, firstName);
     }
@@ -26,5 +28,9 @@ public class UserRegistration {
 
     public boolean validateMobileNumber(String mobileNumber) {
         return Pattern.matches(MOBILE_REGEX, mobileNumber);
+    }
+
+    public boolean validatePassword(String password) {
+        return Pattern.matches(PASSWORD_REGEX, password);
     }
 }

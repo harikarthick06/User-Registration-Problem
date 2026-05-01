@@ -35,6 +35,12 @@ public class UserRegistrationMain {
                 ? "Valid Mobile Number"
                 : "Invalid Mobile Number");
 
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
+        System.out.println(userRegistration.validatePassword(password)
+                ? "Valid Password"
+                : "Invalid Password");
+
         scanner.close();
     }
 }
